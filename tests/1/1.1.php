@@ -8,7 +8,6 @@ echo $distance . PHP_EOL;
 $distance = sim_distance($critics["Michael Phillips"], $critics["Claudia Puig"]);
 echo $distance . PHP_EOL;
 
-//TODO: refactor
 function sim_distance($person1, $person2)
 {
     $keys = array_keys(
