@@ -3,10 +3,10 @@
 $critics = include '../dataset.php';
 
 $distance = sim_distance($critics["Lisa Rose"], $critics["Gene Seymour"]);
-echo $distance . PHP_EOL;
+echo "Lisa Rose vs Gene Seymour -> " . $distance . PHP_EOL;
 
 $distance = sim_distance($critics["Michael Phillips"], $critics["Claudia Puig"]);
-echo $distance . PHP_EOL;
+echo "Michael Phillips vs Claudia Puig -> " . $distance . PHP_EOL;
 
 function sim_distance($person1, $person2)
 {
