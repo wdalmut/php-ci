@@ -1,29 +1,29 @@
 <users>
     <LisaRose>
         <movie>
-		    <name>Lady in the Water</name>
-		    <grade>2.5</grade>
-		</movie>
-		<movie>
-		    <name>Snakes on a Plane</name>
-		    <grade>3.5</grade>
-		</movie>
-		<movie>
-		    <name>Just Mu Luck</name>
-		    <grade>3.0</grade>
-		</movie>
-		<movie>
-		    <name>Superman Returns</name>
-		    <grade>3.5</grade>
-		</movie>
-		<movie>
-		    <name>You, Me and Dupree</name>
-		    <grade>2.5</grade>
-		</movie>
-		<movie>
-		    <name>The Night Listener</name>
-		    <grade>3.0</grade>
-		</movie>
+            <name>Lady in the Water</name>
+            <grade>2.5</grade>
+        </movie>
+        <movie>
+            <name>Snakes on a Plane</name>
+            <grade>3.5</grade>
+        </movie>
+        <movie>
+            <name>Just Mu Luck</name>
+            <grade>3.0</grade>
+        </movie>
+        <movie>
+            <name>Superman Returns</name>
+            <grade>3.5</grade>
+        </movie>
+        <movie>
+            <name>You, Me and Dupree</name>
+            <grade>2.5</grade>
+        </movie>
+        <movie>
+            <name>The Night Listener</name>
+            <grade>3.0</grade>
+        </movie>
     </LisaRose>
     <GeneSeymour>
 	    <movie>
