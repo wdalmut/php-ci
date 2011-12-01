@@ -20,21 +20,29 @@ function sim_pearson($person1, $person2)
         )
     );
     
+    //TODO: sort using keys
     $person1 = array_intersect_key($person1, array_combine($keys, range(1, count($keys))));
-    $person2 = array_intersect_key($person2, array_combine($keys, range(1, count($keys)))); 
+    $person2 = array_intersect_key($person2, array_combine($keys, range(1, count($keys))));
+
+    ksort($person1);
+    ksort($person2);
+    
+    if (!count($person1)) { return 0; }
     
     $sum1 = array_sum($person1);
     $sum2 = array_sum($person2);
     
-    $sum1Sq = array_sum(array_map(function($n){return $n*$n;}, $person1));
-    $sum2Sq = array_sum(array_map(function($n){return $n*$n;}, $person2));
-
+    $sum1Sq = array_sum(array_map(function($n){return pow($n,2);}, $person1));
+    $sum2Sq = array_sum(array_map(function($n){return pow($n,2);}, $person2));
+    
     $pSum = array_sum(array_map(function($n, $m){return $n*$m;}, $person1, $person2));
     
     //Pearson
     $n = count($person1); //Person 1 is filtered on Person 2 and vice-versa (it's the same count)
     $num = $pSum - ($sum1 * $sum2/$n);
     $den = sqrt(($sum1Sq - pow($sum1, 2) / $n) * ($sum2Sq - pow($sum2, 2) / $n));
+    
+    if(!$den) return 0;
     
     $r = $num / $den;
     
