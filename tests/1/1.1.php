@@ -24,9 +24,6 @@ function sim_distance($person1, $person2)
     $points = array();
     foreach ($keys as $value) {
         
-        $first = implode(",", $person1);
-        $second = implode(",", $person2);
-        
         if (@$person1[$value] && @$person2[$value]) {
             $point = pow(($person1[$value]-$person2[$value]), 2);
             $points[] = $point;
