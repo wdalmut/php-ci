@@ -20,7 +20,6 @@ function sim_pearson($person1, $person2)
         )
     );
     
-    //TODO: sort using keys
     $person1 = array_intersect_key($person1, array_combine($keys, range(1, count($keys))));
     $person2 = array_intersect_key($person2, array_combine($keys, range(1, count($keys))));
 
