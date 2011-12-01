@@ -3,7 +3,7 @@ Examples
 
  - 1.1.php The base Euclidean Distance Score
  
-Run 1.1php
+Run 1.1.php
 ----------
 How to use the 1.1 example. You have only to run it as php 1.1.php and 
 get the base results for score distance between users preference using 
@@ -14,4 +14,19 @@ the Eclidean Distance algh.
  Lisa Rose vs Gene Seymour -> 0.16
  Michael Phillips vs Claudia Puig -> 1
  
+Run 1.2.php
+-----------
+How to use the 1.2 example. You have only to run it as php 1.2.php and 
+get the base results for score distance between users preference using 
+the Pearson Distance algh.
+ 
+ Eg. of output:
+ 
+ Lisa Rose vs Gene Seymour -> 0.8
+ Michael Phillips vs Claudia Puig -> -0.63245553203368
+ Michael Phillips vs Gene Seymour -> 1
+ 
+Notes
+-----
 Consider that results depends on {{{dataset.php}}}
+
